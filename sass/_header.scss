@@ -2,7 +2,6 @@
   padding-top: 2rem;
   padding-bottom: 6rem;
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -13,6 +12,7 @@
 
   &__item {
     color: #0b0c11;
+    flex-grow: 1;
     font-size: 0.9rem;
     line-height: 6.6rem;
     text-transform: uppercase;

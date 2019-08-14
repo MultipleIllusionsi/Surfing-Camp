@@ -319,6 +319,19 @@ h1 {
   margin-inline-start: 0px;
   margin-inline-end: 0px; }
 
+/*
+0-600px:      Phone
+600-900px:    Tablet portrait
+900-1200px:   Tablet landscape
+[1200-1800]px:  Normal style apply
+1800px +:     Big desktop
+$breakpoint arguement choises:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
 *,
 *::before,
 *::after {
@@ -329,6 +342,18 @@ h1 {
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: serif;
@@ -384,6 +409,7 @@ li {
   height: 100%; }
   .navigation__item {
     color: #0b0c11;
+    flex-grow: 1;
     font-size: 0.9rem;
     line-height: 6.6rem;
     text-transform: uppercase;
