@@ -1,0 +1,14 @@
+@mixin league {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+
+@mixin playfair {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+}
+
+@mixin poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
