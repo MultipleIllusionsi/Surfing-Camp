@@ -1,0 +1,21 @@
+.btn-cta {
+  // width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 0;
+    height: 0.2rem;
+    width: 85%;
+    opacity: 0.7;
+    background-color: #5da8ef;
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    width: 115%;
+  }
+}
