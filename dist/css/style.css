@@ -351,9 +351,6 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 30%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   font-family: serif;
@@ -362,6 +359,10 @@ body {
 
 li {
   list-style: none; }
+
+a {
+  text-decoration: none;
+  color: currentColor; }
 
 .section-outer {
   padding-right: 2rem;
@@ -375,101 +376,137 @@ li {
   margin-right: auto;
   margin-left: auto;
   position: relative; }
-  .section-inner::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    width: 50%;
-    border-left: 1px solid #f9f9f9;
-    border-right: 1px solid #f9f9f9; }
-  .section-inner::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    width: 1px;
-    border-left: 1px solid #f9f9f9;
-    border-right: 1px solid #f9f9f9;
-    z-index: -10; }
 
-.menu {
-  padding-top: 2rem;
-  padding-bottom: 6rem;
+.btn-cta {
+  position: relative; }
+  .btn-cta::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 0;
+    height: 0.2rem;
+    width: 85%;
+    opacity: 0.7;
+    background-color: #5da8ef;
+    transition: width 0.3s; }
+  .btn-cta:hover::after {
+    opacity: 1;
+    width: 115%; }
+
+.header-menu {
+  height: 13vh;
   display: flex;
   justify-content: space-between; }
+
+.header-hero {
+  height: 62vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/header.png);
+  background-size: cover;
+  background-position: center; }
+
+.header-quote {
+  height: 25vh; }
+  .header-quote__text {
+    text-align: center;
+    color: #333333;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 3.8rem;
+    letter-spacing: 0.26px;
+    width: 50%;
+    padding-top: 8rem;
+    margin: 0 auto; }
+  .header-quote__author {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-top: 3rem; }
 
 .navigation {
   display: flex;
   align-items: center;
   height: 100%; }
   .navigation__item {
-    color: #0b0c11;
-    flex-grow: 1;
-    font-size: 0.9rem;
-    line-height: 6.6rem;
-    text-transform: uppercase;
     font-family: "League Spartan", sans-serif;
     font-weight: 700;
+    color: #0b0c11;
+    font-size: 1.8rem;
+    line-height: 6.6rem;
+    text-transform: uppercase;
     letter-spacing: 0.6rem;
-    opacity: 0.9; }
+    opacity: 0.9;
+    transition: all 0.2s ease-in; }
     .navigation__item:not(:last-child) {
       margin-right: 4rem; }
+    .navigation__item:hover {
+      transform: scale(1.2); }
 
-.hero {
-  position: relative;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/header.png);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 60vh;
-  margin-left: auto; }
-  .hero__caption {
-    height: 100%;
-    text-align: center;
+.hero-caption {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 4rem; }
+  .hero-caption__primary {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 5rem;
+    line-height: 6.4rem;
+    padding-bottom: 1rem; }
+  .hero-caption__blockquote {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    width: 60%;
+    margin: 0 auto; }
+
+.media-content {
+  padding-top: 6rem;
+  height: 70vh; }
+  .media-content--1 {
+    width: 45%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 4rem; }
-    .hero__caption__primary {
-      font-family: "Playfair Display", sans-serif;
-      font-weight: 700;
-      color: #fff;
-      font-size: 5rem;
-      line-height: 6.4rem;
-      padding-bottom: 1rem; }
-    .hero__caption__blockquote {
-      font-family: "Poppins", sans-serif;
-      font-weight: 300;
-      color: #fff;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      width: 60%;
-      margin: 0 auto; }
+    flex-direction: column; }
+    .media-content--1 img {
+      width: 100%; }
+  .media-content--2 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 60%; }
+    .media-content--2 img {
+      width: 100%; }
+  .media-content__text {
+    text-align: left;
+    width: 60%;
+    margin: 5rem auto 0;
+    opacity: 0.65;
+    color: #616161;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.035rem; }
+  .media-content__btn {
+    margin: 4rem auto 0;
+    width: 60%;
+    color: #333333;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.54rem; }
 
-.media-content__quote {
-  text-align: center;
-  color: #333333;
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 700;
-  font-size: 2.6rem;
-  font-weight: 400;
-  line-height: 3.8rem;
-  letter-spacing: 0.26px;
-  width: 50%;
-  padding-top: 8rem;
-  margin: 0 auto; }
-
-.media-content__author {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  color: #333333;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  margin-top: 3rem; }
+.shop {
+  height: 100vh; }
