@@ -1,3 +1,12 @@
+.tertiary_text {
+  text-transform: uppercase;
+  color: #333333;
+  @include league;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.54rem;
+}
+
 .btn-cta {
   // width: 100%;
   position: relative;
@@ -8,14 +17,32 @@
     top: 150%;
     left: 0;
     height: 0.2rem;
-    width: 85%;
+    width: 100%;
     opacity: 0.7;
     background-color: #5da8ef;
-    transition: width 0.3s;
+    transition: all 0.3s;
   }
 
   &:hover::after {
     opacity: 1;
-    width: 115%;
+    width: 150%;
+    transform: translateX(-25px);
   }
+}
+
+.text-secondary {
+  opacity: 0.65;
+  color: #616161;
+  @include poppins;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.035rem;
+}
+
+.heading-secondary {
+  color: #333333;
+  @include playfair;
+  font-size: 4.2rem;
+  font-weight: 700;
+  letter-spacing: 0.042rem;
 }

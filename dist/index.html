@@ -21,10 +21,10 @@
   <body>
     <!-- <div class="container"> -->
 
-    <header class="section-outer header">
-      <div class="section-inner">
+    <header class="section-outer">
+      <div class="section-inner header">
         <div class="header-menu">
-          <img src="../icons/logo.svg" class="logo" alt="logo" />
+          <img src="./icons/logo.svg" class="logo" alt="logo" />
 
           <nav>
             <ul class="navigation">
@@ -56,51 +56,166 @@
       </div>
     </header>
 
-    <section class="section-outer media-content">
-      <div class="section-inner">
-        <figure class="media-content--1">
-          <img src="../img/media-1.png" alt="media-1" />
+    <section class="section-outer">
+      <div class="section-inner media-content">
+        <div class="media-content--1">
+          <img src="./img/media-1.png" alt="media-1" />
 
-          <figcaption class="media-content__text">
+          <h3 class="media-content__text text-secondary">
             By better understanding the various aspects of surfing, you will
             improve faster and have more fun in the water.
-          </figcaption>
+          </h3>
 
           <div class="media-content__btn">
-            <a class="btn-cta" href="#">read more</a>
+            <a class="btn-cta tertiary_text" href="#">read more</a>
           </div>
-        </figure>
+        </div>
 
-        <figure class="media-content--2">
-          <img src="../img/media-2.png" alt="media-2" />
-        </figure>
+        <div class="media-content--2">
+          <img src="./img/media-2.png" alt="media-2" />
+        </div>
       </div>
     </section>
 
-    <section class="section-outer shop">
-      <div class="section-inner">
-        <h2>Surfboards</h2>
+    <section class="section-outer">
+      <div class="section-inner shop">
+        <div class="shop-heading">
+          <h4>Shop</h4>
+          <h2 class="heading-secondary">Surfboards</h2>
+        </div>
+
+        <ul class="shop-list">
+          <li class="shop-list__item">
+            <img src="./img/board1.png" alt="board-1" />
+            <div class="shop-list__item shop-list__item__text">
+              <div class="shop-list__item--type">Funboards</div>
+              <div class="shop-list__item--heading">Chilli Rare Bird</div>
+              <div class="shop-list__item--price">$890</div>
+              <a href="#" class="shop-list__item--btn">Buy</a>
+            </div>
+          </li>
+          <li class="shop-list__item">
+            <img src="./img/board2.png" alt="board-2" />
+            <div class="shop-list__item shop-list__item__text">
+              <div class="shop-list__item--type">Surfboards</div>
+              <div class="shop-list__item--heading">Emery NEM XF</div>
+              <div class="shop-list__item--price">$950</div>
+              <a href="#" class="shop-list__item--btn">Buy</a>
+            </div>
+          </li>
+          <li class="shop-list__item">
+            <img src="./img/board3.png" alt="board-3" />
+            <div class="shop-list__item shop-list__item__text">
+              <div class="shop-list__item--type">Funboards</div>
+              <div class="shop-list__item--heading">Agency GROM</div>
+              <div class="shop-list__item--price">$670</div>
+              <a href="#" class="shop-list__item--btn">Buy</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="shop-show_btn">
+          <a class="btn-cta" href="#">show all</a>
+        </div>
       </div>
     </section>
 
-    <section class="section-outer article--1">
-      <div class="section-inner"><h3>article 1</h3></div>
+    <section class="section-outer">
+      <article class="section-inner article-first">
+        <div class="article-first__content">
+          <h2 class="heading-secondary">Surf Training</h2>
+          <h3 class="text-secondary">
+            By better understanding the various aspects of surfing, By better
+            understanding the various aspects of surfing, you will improve
+            faster and have more fun in the water.
+          </h3>
+          <div class="margin-md">
+            <a class="btn-cta tertiary_text" href="#">read more</a>
+          </div>
+        </div>
+        <img
+          src="./img/article1.png"
+          alt="article-1"
+          class="article-first__img"
+        />
+      </article>
     </section>
 
-    <section class="section-outer article--2">
-      <div class="section-inner"><h3>article 2</h3></div>
+    <section class="section-outer">
+      <article class="section-inner article-second">
+        <img
+          src="./img/article2.png"
+          alt="article-2"
+          class="article-second__img"
+        />
+        <div class="article-second__content">
+          <h2 class="heading-secondary">Point Break</h2>
+          <h3 class="text-secondary">
+            By better understanding the various aspects of By better
+            understanding the various aspects of surfing, By better
+            understanding the various aspects of surfing, you will improve
+            faster and have more fun in the water.
+          </h3>
+          <div class="margin-md">
+            <a class="btn-cta tertiary_text" href="#">read more</a>
+          </div>
+        </div>
+      </article>
     </section>
 
-    <section class="section-outer subscribe">
-      <div class="section-inner"><h2>subscribe</h2></div>
+    <section class="section-outer">
+      <div class="section-inner subscribe">
+        <h2 class="heading-secondary">Join the Club</h2>
+        <h3 class="text-secondary margin-sm">
+          By better understanding the various aspects of surfing, you will
+          improve faster and have more fun in the water.
+        </h3>
+        <form class="subscribe-form" action="#">
+          <input type="email" placeholder="Your E-mail" size="30" />
+          <div><img src="./img/arrow-button.png" alt="send-form__btn" /></div>
+        </form>
+      </div>
     </section>
 
-    <section class="section-outer contacts">
-      <div class="section-inner"><h2>contacts</h2></div>
+    <section class="section-outer">
+      <div class="section-inner contacts">
+        <img class="contacts-img" src="./img/contacts.png" alt="contacts" />
+        <div class="contacts-content">
+          <h4 class="tertiary_text">our camp</h4>
+          <h2 class="heading-secondary">
+            CA 91932, USA Imperial Beach 560 Silver Strand Blvd
+          </h2>
+          <div class="">
+            <a class="btn-cta tertiary_text" href="#">get in touch</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer class="section-outer footer">
-      <div class="section-inner"><h3>footer</h3></div>
+    <footer class="section-outer">
+      <div class="section-inner footer">
+        <img src="./icons/logo.svg" class="footer-logo" alt="logo" />
+
+        <nav class="footer-menu">
+          <ul class="navigation">
+            <li class="navigation__item"><a href="#">stories</a></li>
+            <li class="navigation__item"><a href="#">events</a></li>
+            <li class="navigation__item"><a href="#">places</a></li>
+            <li class="navigation__item"><a href="#">boards</a></li>
+          </ul>
+          <ul class="social">
+            <li class="social__item">
+              <img src="./img/logo_tumblr.png" alt="tumblr" />
+            </li>
+            <li class="social__item">
+              <img src="./img/logo_twitter.png" alt="twitter" />
+            </li>
+            <li class="social__item">
+              <img src="./img/logo_vimeo.png" alt="vimeo" />
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
     <!-- </div> -->
   </body>
