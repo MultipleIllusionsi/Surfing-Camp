@@ -6,4 +6,11 @@
 @import "layout";
 
 @import "components";
-@import "header";
+
+@import "./sections/header";
+@import "./sections/media-content";
+@import "./sections/shop";
+@import "./sections/article";
+@import "./sections/subscribe";
+@import "./sections/contacts";
+@import "./sections/footer";

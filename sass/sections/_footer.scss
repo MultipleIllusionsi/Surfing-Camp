@@ -1,0 +1,39 @@
+//footer
+.footer {
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+
+  &-logo {
+    margin: auto;
+    display: block;
+  }
+
+  &-menu .navigation {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  margin: 3rem auto 0;
+
+  &__item {
+    transition: all 0.2s;
+
+    & img {
+      height: 70%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.5);
+    }
+  }
+}

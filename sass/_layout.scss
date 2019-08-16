@@ -1,18 +1,13 @@
-// .container {
-// }
-
-.section-outer {
+.container {
   padding-right: 2rem;
   padding-left: 2rem;
 }
 
-.section-inner {
+.section {
   border-left: 1px solid #f9f9f9;
   border-right: 1px solid #f9f9f9;
   max-width: 1225px;
-  height: 100%;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
   overflow: hidden;
 }

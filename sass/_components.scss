@@ -1,14 +1,4 @@
-.tertiary_text {
-  text-transform: uppercase;
-  color: #333333;
-  @include league;
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.54rem;
-}
-
 .btn-cta {
-  // width: 100%;
   position: relative;
 
   &::after {
@@ -30,6 +20,14 @@
   }
 }
 
+.heading-secondary {
+  color: #333333;
+  @include playfair;
+  font-size: 4.2rem;
+  font-weight: 700;
+  letter-spacing: 0.042rem;
+}
+
 .text-secondary {
   opacity: 0.65;
   color: #616161;
@@ -39,10 +37,11 @@
   letter-spacing: 0.035rem;
 }
 
-.heading-secondary {
+.text-tertiary {
+  text-transform: uppercase;
   color: #333333;
-  @include playfair;
-  font-size: 4.2rem;
+  @include league;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.042rem;
+  letter-spacing: 0.54rem;
 }
