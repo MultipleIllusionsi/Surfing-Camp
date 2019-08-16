@@ -1,0 +1,22 @@
+//contacts
+.contacts {
+  margin-top: 14rem;
+  display: flex;
+
+  & img {
+    width: 50%;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin-left: 4.5rem;
+
+    & h4 {
+      color: #0b0c11;
+      opacity: 0.27;
+    }
+  }
+}

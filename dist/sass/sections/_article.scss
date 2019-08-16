@@ -1,0 +1,47 @@
+//ARTICLE
+
+.article-first {
+  margin-top: 18rem;
+  display: flex;
+
+  &__content {
+    width: 30%;
+    margin: auto;
+    background-image: url(../img/article_heading_back1.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    & h2 {
+      padding-top: 6rem;
+    }
+  }
+  &__img {
+    width: 65%;
+    object-fit: cover;
+  }
+}
+
+.article-second {
+  margin-top: 12rem;
+  display: flex;
+
+  &__content {
+    width: 30%;
+    margin: auto;
+    background-image: url(../img/article_heading_back2.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    & h2 {
+      padding-top: 6rem;
+    }
+  }
+  &__img {
+    margin-left: auto;
+    width: 35%;
+  }
+}
