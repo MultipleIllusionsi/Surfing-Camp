@@ -1,13 +1,5 @@
 //SHOP
 .shop {
-  background-image: linear-gradient(
-      to bottom,
-      #ffffff 0%,
-      rgba(255, 255, 255, 0) 50%,
-      #ffffff 99%
-    ),
-    url(../img/shop_bg.png);
-
   margin-top: 20rem;
 
   &-heading {
@@ -15,33 +7,20 @@
 
     & h4 {
       color: #5da8ef;
-      @include league;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.54rem;
     }
   }
 
   &-list {
     display: flex;
     justify-content: space-between;
-
+    background-image: url(../../img/shop_base.png);
+    padding-bottom: 4rem;
+    margin-top: 3rem;
     &__item {
       display: flex;
-      position: relative;
-
       & img {
-        filter: drop-shadow(-0.4rem -3rem 6.5rem rgba(11, 12, 17, 0.14));
+        filter: drop-shadow(-0.4rem -3rem 6.5rem rgba(11, 12, 17, 0.3));
         width: 60%;
-      }
-
-      &::before {
-        content: url(../img/shop_base.png);
-        position: absolute;
-        bottom: 0;
-        z-index: -10;
-        width: 100%;
       }
 
       &__text {

@@ -10,13 +10,28 @@
   &-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
-    margin-left: 4.5rem;
+    margin-left: 3.5rem;
+    padding-left: 1rem;
 
     & h4 {
       color: #0b0c11;
       opacity: 0.27;
+    }
+
+    &__address {
+      width: 55%;
+      margin: 0 auto;
+      color: #333333;
+      @include playfair;
+      font-size: 3.2rem;
+      letter-spacing: 0.032rem;
+      font-style: normal;
+
+      @include response(tab-land) {
+        width: 100%;
+      }
     }
   }
 }
