@@ -3,8 +3,16 @@
   margin-top: 14rem;
   display: flex;
 
+  @include response(phone) {
+    flex-direction: column;
+  }
+
   & img {
     width: 50%;
+
+    @include response(phone) {
+      width: 100%;
+    }
   }
 
   &-content {
@@ -17,9 +25,19 @@
     margin-right: auto;
     padding-left: 1rem;
 
+    @include response(phone) {
+      margin-top: 5rem;
+      width: 70%;
+      text-align: center;
+    }
+
     & h4 {
       color: #0b0c11;
       opacity: 0.27;
+
+      @include response(phone) {
+        font-size: 1.6rem;
+      }
     }
 
     &__address {
@@ -33,6 +51,15 @@
 
       @include response(tab-land) {
         width: 100%;
+      }
+
+      @include response(phone) {
+        margin: 2.5rem auto;
+      }
+    }
+    & div {
+      @include response(phone) {
+        padding-bottom: 1rem;
       }
     }
   }

@@ -8,6 +8,11 @@
     padding-top: 1rem;
 
     @include response(tab-land) {
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+
+    @include response(phone) {
       padding-right: 1rem;
       padding-left: 1rem;
     }
@@ -68,6 +73,10 @@
 
     &:not(:last-child) {
       margin-right: 4rem;
+
+      @include response(phone) {
+        margin-right: 3rem;
+      }
     }
 
     &:hover {
@@ -94,6 +103,7 @@
       font-size: 5rem;
       padding-bottom: 1rem;
       opacity: 0.9;
+      filter: drop-shadow(0 1rem 0.7rem black);
 
       @include response(tab-land) {
         font-size: 6.5rem;
@@ -107,10 +117,12 @@
       margin: 0 auto;
       opacity: 0.9;
       padding-bottom: 4rem;
+      filter: drop-shadow(0 0.6rem 0.7rem black);
 
       @include response(tab-land) {
         font-size: 2.2rem;
         opacity: 0.9;
+        width: 70%;
       }
     }
   }

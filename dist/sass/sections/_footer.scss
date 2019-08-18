@@ -3,6 +3,10 @@
   margin-top: 10rem;
   margin-bottom: 7rem;
 
+  @include response(phone) {
+    margin-bottom: 2rem;
+  }
+
   &-logo {
     margin: auto;
     display: block;
