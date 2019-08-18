@@ -6,6 +6,11 @@
     justify-content: space-between;
     padding-bottom: 1rem;
     padding-top: 1rem;
+
+    @include response(tab-land) {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
   }
 
   &-hero {
@@ -29,18 +34,28 @@
       letter-spacing: 0.26px;
       width: 50%;
       margin: 0 auto;
+
+      @include response(tab-land) {
+        width: 70%;
+        font-size: 3rem;
+      }
     }
 
     &__author {
       text-align: center;
       margin-top: 3rem;
+
+      @include response(tab-land) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
 
 .navigation {
   display: flex;
-
+  align-items: center;
+  height: 100%;
   &__item {
     @include league;
     color: #0b0c11;
@@ -58,6 +73,10 @@
     &:hover {
       transform: scale(1.2);
     }
+
+    @include response(tab-land) {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -73,9 +92,12 @@
       @include playfair;
       color: #fff;
       font-size: 5rem;
-      line-height: 6.4rem;
       padding-bottom: 1rem;
       opacity: 0.9;
+
+      @include response(tab-land) {
+        font-size: 6.5rem;
+      }
     }
 
     &__blockquote {
@@ -83,7 +105,13 @@
       font-size: 1.6rem;
       width: 60%;
       margin: 0 auto;
+      opacity: 0.9;
       padding-bottom: 4rem;
+
+      @include response(tab-land) {
+        font-size: 2.2rem;
+        opacity: 0.9;
+      }
     }
   }
 }

@@ -4,8 +4,12 @@
   margin-top: 18rem;
   display: flex;
 
+  @include response(tab-land) {
+    margin-top: 15rem;
+  }
+
   &__content {
-    width: 30%;
+    width: 40%;
     margin: auto;
     background-image: url(../img/article_heading_back1.png);
     background-repeat: no-repeat;
@@ -18,8 +22,12 @@
     }
   }
   &__img {
-    width: 65%;
+    width: 50%;
     object-fit: cover;
+
+    @include response(tab-land) {
+      object-fit: contain;
+    }
   }
 }
 
@@ -28,13 +36,14 @@
   display: flex;
 
   &__content {
-    width: 30%;
+    width: 40%;
     margin: auto;
     background-image: url(../img/article_heading_back2.png);
     background-repeat: no-repeat;
     background-position: left top;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-bottom: 1rem;
 
     & h2 {
       padding-top: 6rem;
@@ -43,5 +52,12 @@
   &__img {
     margin-left: auto;
     width: 35%;
+    object-fit: cover;
+
+    @include response(tab-land) {
+      object-fit: contain;
+      width: 50%;
+      margin-left: 0;
+    }
   }
 }

@@ -2,6 +2,10 @@
 .shop {
   margin-top: 20rem;
 
+  @include response(tab-land) {
+    margin-top: 15rem;
+  }
+
   &-heading {
     text-align: center;
 
@@ -61,5 +65,9 @@
     text-align: center;
     margin-top: 7rem;
     padding-bottom: 1rem;
+
+    @include response(tab-land) {
+      margin-top: 4rem;
+    }
   }
 }
