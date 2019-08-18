@@ -25,6 +25,11 @@
     text-align: left;
     width: 60%;
     margin: 5rem auto 0;
+
+    @include response(tab-land) {
+      width: 80%;
+      padding-right: 1rem;
+    }
   }
 
   &__btn {

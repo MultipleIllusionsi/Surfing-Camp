@@ -4,6 +4,10 @@
   margin-top: 18rem;
   text-align: center;
 
+  @include response(tab-land) {
+    margin-top: 15rem;
+  }
+
   &-form {
     display: flex;
     margin-top: 3rem;
@@ -12,7 +16,8 @@
 
     & div {
       background-image: url(../img/send-button.png); //replace
-      width: 5rem;
+      width: 5%;
+
       & img {
         position: absolute;
         top: 50%;
@@ -33,7 +38,6 @@
     width: 45%;
     height: 5rem;
     padding-left: 4rem;
-    outline: none;
     border: none;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
@@ -51,6 +55,10 @@
       line-height: 6.6rem;
       text-transform: uppercase;
       letter-spacing: 0.54rem;
+
+      @include response(tab-land) {
+        font-size: 1.1rem;
+      }
     }
   }
 }

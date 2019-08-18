@@ -1,6 +1,11 @@
 .container {
   padding-right: 2rem;
   padding-left: 2rem;
+
+  @include response(tab-land) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .section {
@@ -10,4 +15,9 @@
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
+
+  @include response(tab-land) {
+    border-left: none;
+    border-right: none;
+  }
 }

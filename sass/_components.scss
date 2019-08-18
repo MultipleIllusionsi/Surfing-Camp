@@ -23,26 +23,38 @@
 .heading-secondary {
   color: #333333;
   @include playfair;
-  font-size: 4.2rem;
+  font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: 0.042rem;
+
+  @include response(tab-land) {
+    font-size: 5rem;
+  }
 }
 
 .text-secondary {
   opacity: 0.65;
   color: #616161;
   @include poppins;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.035rem;
+
+  @include response(tab-land) {
+    font-size: 2rem;
+  }
 }
 
 .text-tertiary {
   text-transform: uppercase;
   color: #333333;
   @include league;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.54rem;
   transition: all 0.2s;
+
+  @include response(tab-land) {
+    font-size: 1.4rem;
+  }
 }
