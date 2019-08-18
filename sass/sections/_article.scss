@@ -20,6 +20,10 @@
     & h2 {
       padding-top: 6rem;
     }
+
+    @include response(phone) {
+      background-size: contain;
+    }
   }
   &__img {
     width: 50%;
@@ -35,6 +39,10 @@
   margin-top: 12rem;
   display: flex;
 
+  @include response(phone) {
+    margin-top: 6rem;
+  }
+
   &__content {
     width: 40%;
     margin: auto;
@@ -48,7 +56,12 @@
     & h2 {
       padding-top: 6rem;
     }
+
+    @include response(phone) {
+      background-size: contain;
+    }
   }
+
   &__img {
     margin-left: auto;
     width: 35%;
