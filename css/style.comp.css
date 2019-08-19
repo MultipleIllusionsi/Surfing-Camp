@@ -433,6 +433,18 @@ a {
     .text-tertiary {
       font-size: 1.4rem; } }
 
+.header::after {
+  content: "";
+  display: block;
+  width: 0.2rem;
+  height: 10rem;
+  background-color: #5da8ef;
+  margin: 8rem auto 0; }
+
+@media only screen and (max-width: 37.5em) {
+  .header::after {
+    content: none; } }
+
 .header-menu {
   display: flex;
   justify-content: space-between;
@@ -601,7 +613,7 @@ a {
   .shop-list {
     display: flex;
     justify-content: space-between;
-    background-image: url(../../img/shop_base.png);
+    background-image: url(../img/shop_base.png);
     padding-bottom: 4rem;
     margin-top: 3rem; }
     .shop-list__item {
@@ -643,6 +655,18 @@ a {
     @media only screen and (max-width: 75em) {
       .shop-show_btn {
         margin-top: 4rem; } }
+
+.articles::after {
+  content: "";
+  display: block;
+  width: 0.2rem;
+  height: 10rem;
+  background-color: #5da8ef;
+  margin: 12rem auto 0; }
+
+@media only screen and (max-width: 37.5em) {
+  .articles::after {
+    content: none; } }
 
 .article-first {
   margin-top: 18rem;
@@ -701,9 +725,9 @@ a {
         margin-left: 0; } }
 
 .subscribe {
-  margin-top: 18rem;
+  margin-top: 7rem;
   text-align: center; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 37.5em) {
     .subscribe {
       margin-top: 15rem; } }
   .subscribe-form {

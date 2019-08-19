@@ -1,7 +1,17 @@
 //ARTICLE
+.articles {
+  @include blue-line(12rem, 0);
+
+  @include response(phone) {
+    &::after {
+      content: none;
+    }
+  }
+}
 
 .article-first {
   margin-top: 18rem;
+
   display: flex;
 
   @include response(tab-land) {

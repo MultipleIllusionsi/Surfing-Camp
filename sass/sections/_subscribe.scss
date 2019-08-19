@@ -1,10 +1,10 @@
 //subscribe
 
 .subscribe {
-  margin-top: 18rem;
+  margin-top: 7rem;
   text-align: center;
 
-  @include response(tab-land) {
+  @include response(phone) {
     margin-top: 15rem;
   }
 

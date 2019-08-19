@@ -1,6 +1,14 @@
 //HEADER
 
 .header {
+  @include blue-line(8rem, 0);
+
+  @include response(phone) {
+    &::after {
+      content: none;
+    }
+  }
+
   &-menu {
     display: flex;
     justify-content: space-between;
