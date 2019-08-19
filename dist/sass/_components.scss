@@ -20,6 +20,17 @@
   }
 }
 
+@mixin blue-line($top, $bottom) {
+  &::after {
+    content: "";
+    display: block;
+    width: 0.2rem;
+    height: 10rem;
+    background-color: #5da8ef;
+    margin: $top auto $bottom;
+  }
+}
+
 .heading-secondary {
   color: #333333;
   @include playfair;
