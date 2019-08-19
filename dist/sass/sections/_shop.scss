@@ -21,11 +21,20 @@
     padding-bottom: 4rem;
     margin-top: 3rem;
 
+    @include response(phone) {
+      padding-bottom: 2rem;
+    }
+
     &__item {
       display: flex;
       & img {
         filter: drop-shadow(-0.4rem -3rem 6.5rem rgba(11, 12, 17, 0.3));
         width: 60%;
+
+        @include response(phone) {
+          width: 50%;
+          object-fit: contain;
+        }
       }
 
       &__text {
