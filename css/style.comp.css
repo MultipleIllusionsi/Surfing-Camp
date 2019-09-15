@@ -334,7 +334,8 @@ h1 {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -381,21 +382,27 @@ a {
       border-right: none; } }
 
 .btn-cta {
-  position: relative; }
+  position: relative;
+  padding: 1rem; }
+  @media only screen and (max-width: 75em) {
+    .btn-cta {
+      padding: 1rem 0; } }
   .btn-cta::after {
     content: "";
     position: absolute;
-    top: 150%;
+    top: 100%;
     left: 0;
     height: 0.2rem;
-    width: 100%;
+    width: 50%;
     opacity: 0.7;
     background-color: #5da8ef;
     transition: all 0.3s; }
+    @media only screen and (max-width: 75em) {
+      .btn-cta::after {
+        width: 75%; } }
   .btn-cta:hover::after {
     opacity: 1;
-    width: 150%;
-    transform: translateX(-25px); }
+    width: 100%; }
 
 .heading-secondary {
   color: #333333;
@@ -443,7 +450,12 @@ a {
 
 @media only screen and (max-width: 37.5em) {
   .header::after {
-    content: none; } }
+    content: "";
+    display: block;
+    width: 0.2rem;
+    height: 10rem;
+    background-color: #5da8ef;
+    margin: 4rem auto 0; } }
 
 .header-menu {
   display: flex;
@@ -463,9 +475,11 @@ a {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/header.png);
   background-size: cover;
   width: 100%;
-  height: 0;
-  padding-top: 56.16%;
+  height: 65vh;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .header-hero {
+      background-position: center; } }
 
 .header-quote {
   margin-top: 5rem; }
@@ -548,7 +562,8 @@ a {
       .hero-caption__blockquote {
         font-size: 2.2rem;
         opacity: 0.9;
-        width: 70%; } }
+        width: 70%;
+        padding-bottom: 8rem; } }
 
 .media-content {
   margin-top: 12rem;
@@ -556,37 +571,18 @@ a {
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .media-content {
-      padding-bottom: 0; } }
-  @media only screen and (max-width: 37.5em) {
-    .media-content {
-      display: flex;
-      flex-direction: column; } }
+      margin-top: 8rem; } }
   .media-content--1 {
     width: 45%;
     display: flex;
     flex-direction: column; }
     .media-content--1 img {
       width: 100%; }
-      @media only screen and (max-width: 37.5em) {
-        .media-content--1 img {
-          order: 10;
-          margin-top: 5rem;
-          filter: drop-shadow(0 -0.1rem 2rem black); } }
-    @media only screen and (max-width: 37.5em) {
-      .media-content--1 {
-        width: 100%; } }
   .media-content--2 {
     position: absolute;
     top: 10%;
     right: 0;
     width: 60%; }
-    @media only screen and (max-width: 37.5em) {
-      .media-content--2 {
-        display: block;
-        position: static;
-        width: 100%;
-        order: -1;
-        filter: drop-shadow(0 0.1rem 2rem black); } }
   .media-content__text {
     text-align: left;
     width: 60%;
@@ -594,22 +590,23 @@ a {
     @media only screen and (max-width: 75em) {
       .media-content__text {
         width: 80%;
-        padding-right: 1rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .media-content__text {
-        text-align: center; } }
+        margin: 5rem 2rem 0; } }
   .media-content__btn {
     margin: 4rem auto 0;
     width: 60%; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 75em) {
       .media-content__btn {
-        text-align: center; } }
+        margin: 4rem 2rem 0;
+        width: 100%; } }
 
 .shop {
   margin-top: 20rem; }
   @media only screen and (max-width: 75em) {
     .shop {
       margin-top: 15rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .shop {
+      margin-top: 10rem; } }
   .shop-heading {
     text-align: center; }
     .shop-heading h4 {
@@ -617,7 +614,7 @@ a {
   .shop-list {
     display: flex;
     justify-content: space-between;
-    background-image: url(../img/shop_base.png);
+    background: #e8e8e8;
     padding-bottom: 4rem;
     margin-top: 3rem; }
     @media only screen and (max-width: 37.5em) {
@@ -663,24 +660,32 @@ a {
       .shop-show_btn {
         margin-top: 4rem; } }
 
-.articles::after {
-  content: "";
-  display: block;
-  width: 0.2rem;
-  height: 10rem;
-  background-color: #5da8ef;
-  margin: 12rem auto 0; }
-
-@media only screen and (max-width: 37.5em) {
+.articles {
+  padding-top: 18rem;
+  background-image: url(../../img/shop_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 75em) {
+    .articles {
+      padding-top: 15rem; } }
   .articles::after {
-    content: none; } }
+    content: "";
+    display: block;
+    width: 0.2rem;
+    height: 10rem;
+    background-color: #5da8ef;
+    margin: 12rem auto 0; }
+  @media only screen and (max-width: 37.5em) {
+    .articles::after {
+      content: "";
+      display: block;
+      width: 0.2rem;
+      height: 10rem;
+      background-color: #5da8ef;
+      margin: 7rem auto 0; } }
 
 .article-first {
-  margin-top: 18rem;
   display: flex; }
-  @media only screen and (max-width: 75em) {
-    .article-first {
-      margin-top: 15rem; } }
   .article-first__content {
     width: 40%;
     margin: auto;
@@ -734,25 +739,21 @@ a {
 .subscribe {
   margin-top: 7rem;
   text-align: center; }
-  @media only screen and (max-width: 37.5em) {
-    .subscribe {
-      margin-top: 15rem; } }
   .subscribe-form {
     display: flex;
     margin-top: 3rem;
     justify-content: center;
     position: relative; }
-    .subscribe-form div {
-      background-image: url(../img/send-button.png);
+    .subscribe-form button {
+      border: none;
+      background: #5da8ef;
       width: 5%; }
       @media only screen and (max-width: 37.5em) {
-        .subscribe-form div {
+        .subscribe-form button {
           width: 10%; } }
-      .subscribe-form div img {
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%); }
-      .subscribe-form div:hover {
+      .subscribe-form button::after {
+        content: url(../img/arrow-button.png); }
+      .subscribe-form button:hover {
         cursor: pointer; }
   .subscribe h3 {
     width: 50%;
@@ -765,8 +766,8 @@ a {
     height: 5rem;
     padding-left: 4rem;
     border: none;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
     text-transform: none;
     background-color: #f5f5f5;
     color: #333333;
@@ -793,7 +794,8 @@ a {
   display: flex; }
   @media only screen and (max-width: 37.5em) {
     .contacts {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-top: 8rem; } }
   .contacts img {
     width: 50%; }
     @media only screen and (max-width: 37.5em) {
@@ -838,8 +840,7 @@ a {
         padding-bottom: 1rem; } }
 
 .footer {
-  margin-top: 10rem;
-  margin-bottom: 7rem; }
+  margin-top: 10rem; }
   @media only screen and (max-width: 37.5em) {
     .footer {
       margin-bottom: 2rem; } }
@@ -863,3 +864,5 @@ a {
     .social__item:hover {
       cursor: pointer;
       transform: scale(1.5); }
+    .social__item-logo {
+      width: 6rem; }

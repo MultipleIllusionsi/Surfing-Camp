@@ -1,7 +1,6 @@
 //footer
 .footer {
   margin-top: 10rem;
-  margin-bottom: 7rem;
 
   @include response(phone) {
     margin-bottom: 2rem;
@@ -38,6 +37,10 @@
     &:hover {
       cursor: pointer;
       transform: scale(1.5);
+    }
+
+    &-logo {
+      width: 6rem;
     }
   }
 }

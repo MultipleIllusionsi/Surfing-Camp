@@ -5,6 +5,7 @@
 
   @include response(phone) {
     flex-direction: column;
+    margin-top: 8rem;
   }
 
   & img {

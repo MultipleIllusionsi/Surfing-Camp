@@ -28,10 +28,9 @@
       href="./favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#5da8ef" />
 
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap"
       rel="stylesheet"
@@ -42,10 +41,13 @@
     />
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
 
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>Surfing Camp</title>
   </head>
   <body>
     <div class="container">
+      <!-- header -->
       <header class="section header">
         <div class="header-menu">
           <img src="./icons/logo.svg" class="logo" alt="logo" />
@@ -78,7 +80,7 @@
           <div class="header-quote__author text-tertiary">John Mccarthy</div>
         </div>
       </header>
-
+      <!-- media-content -->
       <section class="section media-content">
         <div class="media-content--1">
           <img src="./img/media-1.png" alt="media-1" />
@@ -95,7 +97,7 @@
 
         <img class="media-content--2" src="./img/media-2.png" alt="media-2" />
       </section>
-
+      <!-- shop -->
       <section class="section shop">
         <div class="shop-heading">
           <h4 class="text-tertiary">Shop</h4>
@@ -140,7 +142,7 @@
           <a class="btn-cta text-tertiary" href="#">show all</a>
         </div>
       </section>
-
+      <!-- articles -->
       <section class="section articles">
         <article class="article-first">
           <div class="article-first__content">
@@ -180,24 +182,28 @@
           </div>
         </article>
       </section>
-
+      <!-- subscribe -->
       <section class="section subscribe">
         <h2 class="heading-secondary">Join the Club</h2>
         <h3 class="text-secondary margin-sm">
           By better understanding the various aspects of surfing, you will
           improve faster and have more fun in the water.
         </h3>
-        <form class="subscribe-form" action="#">
+        <form id="subscribe-form" class="subscribe-form" action="#">
           <input
             type="email"
             class="text-tertiary"
             placeholder="Your E-mail"
             size="20"
           />
-          <div><img src="./img/arrow-button.png" alt="send-form__btn" /></div>
+          <button
+            form="subscribe-form"
+            type="submit"
+            aria-label="send-email"
+          ></button>
         </form>
       </section>
-
+      <!-- contacts -->
       <section class="section contacts">
         <img class="contacts-img" src="./img/contacts.png" alt="contacts" />
         <div class="contacts-content">
@@ -210,7 +216,7 @@
           </div>
         </div>
       </section>
-
+      <!-- footer -->
       <footer class="section footer">
         <img src="./icons/logo.svg" class="footer-logo" alt="logo" />
 
@@ -223,13 +229,28 @@
           </ul>
           <ul class="social">
             <li class="social__item">
-              <img src="./img/logo_tumblr.png" alt="tumblr" />
+              <a href="#">
+                <img
+                  class="social__item-logo"
+                  src="./icons/logo-tumblr.svg"
+                  alt="tumblr"
+              /></a>
             </li>
             <li class="social__item">
-              <img src="./img/logo_twitter.png" alt="twitter" />
+              <a href="#">
+                <img
+                  class="social__item-logo"
+                  src="./icons/logo-twitter.svg"
+                  alt="twitter"
+              /></a>
             </li>
             <li class="social__item">
-              <img src="./img/logo_vimeo.png" alt="vimeo" />
+              <a href="#">
+                <img
+                  class="social__item-logo"
+                  src="./icons/logo-vimeo.svg"
+                  alt="vimeo"
+              /></a>
             </li>
           </ul>
         </nav>
