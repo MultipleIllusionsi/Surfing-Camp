@@ -742,17 +742,16 @@ a {
     margin-top: 3rem;
     justify-content: center;
     position: relative; }
-    .subscribe-form div {
-      background-image: url(../img/send-button.png);
+    .subscribe-form button {
+      border: none;
+      background: #5da8ef;
       width: 5%; }
       @media only screen and (max-width: 37.5em) {
-        .subscribe-form div {
+        .subscribe-form button {
           width: 10%; } }
-      .subscribe-form div img {
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%); }
-      .subscribe-form div:hover {
+      .subscribe-form button::after {
+        content: url(../img/arrow-button.png); }
+      .subscribe-form button:hover {
         cursor: pointer; }
   .subscribe h3 {
     width: 50%;
@@ -765,8 +764,8 @@ a {
     height: 5rem;
     padding-left: 4rem;
     border: none;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
     text-transform: none;
     background-color: #f5f5f5;
     color: #333333;
@@ -838,8 +837,7 @@ a {
         padding-bottom: 1rem; } }
 
 .footer {
-  margin-top: 10rem;
-  margin-bottom: 7rem; }
+  margin-top: 10rem; }
   @media only screen and (max-width: 37.5em) {
     .footer {
       margin-bottom: 2rem; } }
@@ -863,3 +861,5 @@ a {
     .social__item:hover {
       cursor: pointer;
       transform: scale(1.5); }
+    .social__item-logo {
+      width: 6rem; }

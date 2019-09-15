@@ -14,17 +14,17 @@
     justify-content: center;
     position: relative;
 
-    & div {
-      background-image: url(../img/send-button.png); //replace
+    & button {
+      border: none;
+      background: #5da8ef;
       width: 5%;
 
       @include response(phone) {
         width: 10%;
       }
-      & img {
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
+
+      &::after {
+        content: url(../img/arrow-button.png);
       }
 
       &:hover {
@@ -46,8 +46,8 @@
     height: 5rem;
     padding-left: 4rem;
     border: none;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
     text-transform: none;
     background-color: #f5f5f5;
     color: #333333;
