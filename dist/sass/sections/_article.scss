@@ -1,22 +1,24 @@
 //ARTICLE
 .articles {
+  padding-top: 18rem;
+
+  background-image: url(../../img/shop_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include response(tab-land) {
+    padding-top: 15rem;
+  }
+
   @include blue-line(12rem, 0);
 
   @include response(phone) {
-    &::after {
-      content: none;
-    }
+    @include blue-line(7rem, 0);
   }
 }
 
 .article-first {
-  margin-top: 18rem;
-
   display: flex;
-
-  @include response(tab-land) {
-    margin-top: 15rem;
-  }
 
   &__content {
     width: 40%;

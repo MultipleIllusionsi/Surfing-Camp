@@ -6,6 +6,10 @@
     margin-top: 15rem;
   }
 
+  @include response(phone) {
+    margin-top: 10rem;
+  }
+
   &-heading {
     text-align: center;
 
@@ -17,7 +21,7 @@
   &-list {
     display: flex;
     justify-content: space-between;
-    background-image: url(../img/shop_base.png);
+    background: #e8e8e8;
     padding-bottom: 4rem;
     margin-top: 3rem;
 

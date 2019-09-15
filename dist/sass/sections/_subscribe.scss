@@ -4,10 +4,6 @@
   margin-top: 7rem;
   text-align: center;
 
-  @include response(phone) {
-    margin-top: 15rem;
-  }
-
   &-form {
     display: flex;
     margin-top: 3rem;
