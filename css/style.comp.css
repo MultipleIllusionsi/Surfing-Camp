@@ -325,6 +325,10 @@ h1 {
 .margin-md {
   margin-top: 6rem !important; }
 
+.active {
+  opacity: 1 !important;
+  transform: translateY(0rem) !important; }
+
 *,
 *::before,
 *::after {
@@ -364,6 +368,10 @@ a {
 .container {
   padding-right: 2rem;
   padding-left: 2rem; }
+  .container > *:not(:first-child) {
+    opacity: 0;
+    transform: translateY(20rem);
+    transition: transform 1.5s ease-in, opacity 3s ease; }
   @media only screen and (max-width: 75em) {
     .container {
       padding-right: 0;
@@ -662,7 +670,7 @@ a {
 
 .articles {
   padding-top: 18rem;
-  background-image: url(../../img/shop_bg.png);
+  background-image: url(../img/shop_bg.png);
   background-size: cover;
   background-repeat: no-repeat; }
   @media only screen and (max-width: 75em) {

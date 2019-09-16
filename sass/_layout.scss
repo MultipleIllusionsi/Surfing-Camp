@@ -2,6 +2,12 @@
   padding-right: 2rem;
   padding-left: 2rem;
 
+  & > *:not(:first-child) {
+    opacity: 0;
+    transform: translateY(20rem);
+    transition: transform 1.5s ease-in, opacity 3s ease;
+  }
+
   @include response(tab-land) {
     padding-right: 0;
     padding-left: 0;
