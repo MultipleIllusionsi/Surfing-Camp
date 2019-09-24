@@ -16,6 +16,7 @@
     opacity: 0.7;
     background-color: #5da8ef;
     transition: all 0.3s;
+    padding-bottom: 0.1rem;
 
     @include response(tab-land) {
       width: 75%;
