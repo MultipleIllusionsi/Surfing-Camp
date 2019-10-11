@@ -405,7 +405,8 @@ section {
     width: 50%;
     opacity: 0.7;
     background-color: #5da8ef;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    padding-bottom: 0.1rem; }
     @media only screen and (max-width: 75em) {
       .btn-cta::after {
         width: 75%; } }
@@ -471,14 +472,6 @@ section {
   justify-content: space-between;
   padding-bottom: 1rem;
   padding-top: 1rem; }
-  @media only screen and (max-width: 75em) {
-    .header-menu {
-      padding-right: 3rem;
-      padding-left: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .header-menu {
-      padding-right: 1rem;
-      padding-left: 1rem; } }
 
 .header-hero {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/header.png);
@@ -527,14 +520,13 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.6rem;
     opacity: 0.9;
-    transition: all 0.2s ease-in; }
-    .navigation__item:not(:last-child) {
-      margin-right: 4rem; }
-      @media only screen and (max-width: 37.5em) {
-        .navigation__item:not(:last-child) {
-          margin-right: 3rem; } }
+    transition: all 0.2s ease-in;
+    padding: 0 2rem; }
     .navigation__item:hover {
       transform: scale(1.2); }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__item {
+        padding: 0 1.5rem; } }
     @media only screen and (max-width: 75em) {
       .navigation__item {
         font-size: 1.8rem; } }
