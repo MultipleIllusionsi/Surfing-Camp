@@ -2,11 +2,14 @@
   const OFFSET_BEFORE_SECTION = 150;
   const appSections = document.querySelectorAll("section");
 
-  document.addEventListener("DOMContentLoaded", scrollSections);
+  document.addEventListener(
+    "DOMContentLoaded",
+    scrollSections(appSections)
+  );
 
-  function scrollSections() {
+  function scrollSections(sections) {
     if (window.innerWidth > 767) {
-      addingEventListenerToSections(appSections);
+      addingEventListenerToSections(sections);
     } else {
       for (const section of sections) {
         section.classList.add("active");
