@@ -1,10 +1,29 @@
-const sections = document.querySelector(".container").children;
+(function() {
+  const OFFSET_BEFORE_SECTION = 150;
+  const appSections = document.querySelectorAll("section");
 
-window.addEventListener("scroll", function() {
-  for (let section of sections) {
-    // make more efficient
-    if (this.innerHeight + this.scrollY - 150 > section.offsetTop) {
-      section.classList.add("active");
+  document.addEventListener("DOMContentLoaded", scrollSections);
+
+  function scrollSections() {
+    if (window.innerWidth > 767) {
+      addingEventListenerToSections(appSections);
+    } else {
+      for (const section of sections) {
+        section.classList.add("active");
+      }
     }
   }
-});
+
+  function addingEventListenerToSections(sections) {
+    window.addEventListener("scroll", function() {
+      for (const section of sections) {
+        const sectionCoordinate = this.innerHeight + this.scrollY;
+        const scrollPage = section.offsetTop;
+
+        if (sectionCoordinate - OFFSET_BEFORE_SECTION > scrollPage) {
+          section.classList.add("active");
+        }
+      }
+    });
+  }
+})();
