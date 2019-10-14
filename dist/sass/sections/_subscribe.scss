@@ -12,6 +12,7 @@
 
     & button {
       border: none;
+      position: relative;
       background: #5da8ef;
       width: 5%;
 
@@ -20,7 +21,22 @@
       }
 
       &::after {
-        content: url(../img/arrow-button.png);
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-70%, -50%) rotate(45deg);
+        border-top: 2px white solid;
+        border-right: 2px white solid;
+        height: 15px;
+        width: 15px;
+
+        @include response(phone) {
+          border-top: 1px white solid;
+          border-right: 1px white solid;
+          height: 10px;
+          width: 10px;
+        }
       }
 
       &:hover {

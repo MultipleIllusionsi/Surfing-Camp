@@ -366,6 +366,7 @@ a {
   color: currentColor; }
 
 .container {
+  min-width: 320px;
   padding-right: 2rem;
   padding-left: 2rem; }
   @media only screen and (max-width: 75em) {
@@ -747,13 +748,28 @@ section {
     position: relative; }
     .subscribe-form button {
       border: none;
+      position: relative;
       background: #5da8ef;
       width: 5%; }
       @media only screen and (max-width: 37.5em) {
         .subscribe-form button {
           width: 10%; } }
       .subscribe-form button::after {
-        content: url(../img/arrow-button.png); }
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-70%, -50%) rotate(45deg);
+        border-top: 2px white solid;
+        border-right: 2px white solid;
+        height: 15px;
+        width: 15px; }
+        @media only screen and (max-width: 37.5em) {
+          .subscribe-form button::after {
+            border-top: 1px white solid;
+            border-right: 1px white solid;
+            height: 10px;
+            width: 10px; } }
       .subscribe-form button:hover {
         cursor: pointer; }
   .subscribe h3 {
