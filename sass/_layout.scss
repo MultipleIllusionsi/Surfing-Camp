@@ -11,8 +11,9 @@
 
 section {
   opacity: 0;
+  will-change: transform, opacity;
   transform: translateY(20rem);
-  transition: transform 1.5s, opacity 3s ease;
+  transition: transform 1.5s ease-out, opacity 3s ease-out;
 }
 
 .section {
