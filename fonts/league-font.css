@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url("leaguespartan-bold.eot");
+  src: url("leaguespartan-bold.eot?#iefix") format("embedded-opentype"),
+    url("leaguespartan-bold.woff2") format("woff2"),
+    url("leaguespartan-bold.woff") format("woff"),
+    url("leaguespartan-bold.ttf") format("truetype");
+
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
