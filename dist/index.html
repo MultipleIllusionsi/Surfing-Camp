@@ -1,285 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./public/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./public/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./public/favicon-16x16.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="manifest" href="./public/manifest.json" />
-    <link
-      rel="mask-icon"
-      href="./public/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#5da8ef" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+  <link rel="manifest" href="./public/manifest.json" />
+  <link rel="mask-icon" href="./public/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#5da8ef" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preload" href="./img/header.jpg" as="image">
 
-    <script defer src="./script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:300,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script defer src="./script.js"></script>
 
-    <title>Surfing Camp</title>
-  </head>
-  <body>
-    <div class="container">
-      <!-- header -->
-      <header class="section header">
-        <div class="header-menu">
-          <img src="./icons/logo.svg" class="logo" alt="logo" />
+  <title>Surfing Camp</title>
+</head>
 
-          <nav>
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a href="#">stories</a>
-              </li>
-              <li class="navigation__item"><a href="#">events</a></li>
-              <li class="navigation__item"><a href="#">places</a></li>
-              <li class="navigation__item"><a href="#">boards</a></li>
-            </ul>
-          </nav>
-        </div>
+<body>
+  <div class="container">
+    <!-- header -->
+    <header class="section header">
+      <div class="header-menu">
+        <img src="./icons/logo.svg" class="logo" alt="logo" />
 
-        <figure class="header-hero">
-          <figcaption class="hero-caption">
-            <h1 class="hero-caption__primary">
-              Your Beautiful Escape
-            </h1>
-            <blockquote
-              class="hero-caption__blockquote  text-secondary"
-            >
-              One of the greatest things about the sport of surfing is
-              that you need only three things: your body, a surfboard,
-              and a wave.
-            </blockquote>
-          </figcaption>
-        </figure>
-
-        <div class="header-quote">
-          <h2 class="header-quote__text">
-            Surfing is the most blissful experience you can have on
-            this planet, a taste of heaven.
-          </h2>
-          <div class="header-quote__author text-tertiary">
-            John Mccarthy
-          </div>
-        </div>
-      </header>
-      <!-- media-content -->
-      <section class="section media-content">
-        <div class="media-content--1">
-          <img src="./img/media-1.png" alt="media-1" />
-
-          <h3 class="media-content__text text-secondary">
-            By better understanding the various aspects of surfing,
-            you will improve faster and have more fun in the water.
-          </h3>
-
-          <div class="media-content__btn">
-            <a class="btn-cta text-tertiary" href="#">read more</a>
-          </div>
-        </div>
-
-        <img
-          class="media-content--2"
-          src="./img/media-2.png"
-          alt="media-2"
-        />
-      </section>
-      <!-- shop -->
-      <section class="section shop">
-        <div class="shop-heading">
-          <h4 class="text-tertiary">Shop</h4>
-          <h2 class="heading-secondary">Surfboards</h2>
-        </div>
-
-        <ul class="shop-list">
-          <li class="shop-list__item">
-            <img src="./img/board1.png" alt="board-1" />
-            <div class="shop-list__item__text">
-              <div class="shop-list__item--type">Funboards</div>
-              <div class="shop-list__item--heading">
-                Chilli Rare Bird
-              </div>
-              <div class="shop-list__item--price">$890</div>
-              <a href="#" class="text-tertiary margin-sm">Buy</a>
-            </div>
-          </li>
-
-          <li class="shop-list__item">
-            <img src="./img/board2.png" alt="board-2" />
-            <div class=" shop-list__item__text">
-              <div class="shop-list__item--type">Surfboards</div>
-              <div class="shop-list__item--heading">Emery NEM XF</div>
-              <div class="shop-list__item--price">$950</div>
-              <a href="#" class="text-tertiary margin-sm">
-                Buy
-              </a>
-            </div>
-          </li>
-
-          <li class="shop-list__item">
-            <img src="./img/board3.png" alt="board-3" />
-            <div class=" shop-list__item__text">
-              <div class="shop-list__item--type">Funboards</div>
-              <div class="shop-list__item--heading">Agency GROM</div>
-              <div class="shop-list__item--price">$670</div>
-              <a href="#" class="text-tertiary margin-sm">Buy</a>
-            </div>
-          </li>
-        </ul>
-
-        <div class="shop-show_btn">
-          <a class="btn-cta text-tertiary" href="#">show all</a>
-        </div>
-      </section>
-      <!-- articles -->
-      <section class="section articles">
-        <article class="article-first">
-          <div class="article-first__content">
-            <h2 class="heading-secondary">Surf Training</h2>
-            <h3 class="text-secondary">
-              By better understanding the various aspects of surfing,
-              By better understanding the various aspects of surfing,
-              you will improve faster and have more fun in the water.
-            </h3>
-            <div class="margin-md">
-              <a class="btn-cta text-tertiary" href="#">read more</a>
-            </div>
-          </div>
-
-          <img
-            src="./img/article1.png"
-            alt="article-1"
-            class="article-first__img"
-          />
-        </article>
-
-        <article class="article-second">
-          <img
-            src="./img/article2.png"
-            alt="article-2"
-            class="article-second__img"
-          />
-          <div class="article-second__content">
-            <h2 class="heading-secondary">Point Break</h2>
-            <h3 class="text-secondary">
-              By better understanding the various aspects of surfing,
-              you will improve faster and have more fun in the water.
-            </h3>
-            <div class="margin-md">
-              <a class="btn-cta text-tertiary" href="#">read more</a>
-            </div>
-          </div>
-        </article>
-      </section>
-      <!-- subscribe -->
-      <section class="section subscribe">
-        <h2 class="heading-secondary">Join the Club</h2>
-        <h3 class="text-secondary margin-sm">
-          By better understanding the various aspects of surfing, you
-          will improve faster and have more fun in the water.
-        </h3>
-        <form id="subscribe-form" class="subscribe-form" action="#">
-          <input
-            type="email"
-            class="text-tertiary"
-            placeholder="Your E-mail"
-            size="20"
-          />
-          <button
-            form="subscribe-form"
-            type="submit"
-            aria-label="send-email"
-          ></button>
-        </form>
-      </section>
-      <!-- contacts -->
-      <section class="section contacts">
-        <img
-          class="contacts-img"
-          src="./img/contacts.png"
-          alt="contacts"
-        />
-        <div class="contacts-content">
-          <h4 class="text-tertiary">our camp</h4>
-          <address class="contacts-content__address">
-            CA 91932, USA Imperial Beach 560 Silver Strand Blvd
-          </address>
-          <div>
-            <a class="btn-cta text-tertiary" href="#">get in touch</a>
-          </div>
-        </div>
-      </section>
-      <!-- footer -->
-      <footer class="section footer">
-        <img src="./icons/logo.svg" class="footer-logo" alt="logo" />
-
-        <nav class="footer-menu">
+        <nav>
           <ul class="navigation">
-            <li class="navigation__item"><a href="#">stories</a></li>
+            <li class="navigation__item">
+              <a href="#">stories</a>
+            </li>
             <li class="navigation__item"><a href="#">events</a></li>
             <li class="navigation__item"><a href="#">places</a></li>
             <li class="navigation__item"><a href="#">boards</a></li>
           </ul>
-          <ul class="social">
-            <li class="social__item">
-              <a href="#">
-                <img
-                  class="social__item-logo"
-                  src="./icons/logo-tumblr.svg"
-                  alt="tumblr"
-              /></a>
-            </li>
-            <li class="social__item">
-              <a href="#">
-                <img
-                  class="social__item-logo"
-                  src="./icons/logo-twitter.svg"
-                  alt="twitter"
-              /></a>
-            </li>
-            <li class="social__item">
-              <a href="#">
-                <img
-                  class="social__item-logo"
-                  src="./icons/logo-vimeo.svg"
-                  alt="vimeo"
-              /></a>
-            </li>
-          </ul>
         </nav>
-      </footer>
-    </div>
-  </body>
+      </div>
+
+      <figure class="header-hero">
+        <figcaption class="hero-caption">
+          <h1 class="hero-caption__primary">
+            Your Beautiful Escape
+          </h1>
+          <blockquote class="hero-caption__blockquote  text-secondary">
+            One of the greatest things about the sport of surfing is
+            that you need only three things: your body, a surfboard,
+            and a wave.
+          </blockquote>
+        </figcaption>
+      </figure>
+
+      <div class="header-quote">
+        <h2 class="header-quote__text">
+          Surfing is the most blissful experience you can have on
+          this planet, a taste of heaven.
+        </h2>
+        <div class="header-quote__author text-tertiary">
+          John Mccarthy
+        </div>
+      </div>
+    </header>
+    <!-- media-content -->
+    <section class="section media-content">
+      <div class="media-content--1">
+        <img src="./img/media-1.jpg" alt="media-1" />
+
+        <h3 class="media-content__text text-secondary">
+          By better understanding the various aspects of surfing,
+          you will improve faster and have more fun in the water.
+        </h3>
+
+        <div class="media-content__btn">
+          <a class="btn-cta text-tertiary" href="#">read more</a>
+        </div>
+      </div>
+
+      <img class="media-content--2" src="./img/media-2.jpg" alt="media-2" />
+    </section>
+    <!-- shop -->
+    <section class="section shop">
+      <div class="shop-heading">
+        <h4 class="text-tertiary">Shop</h4>
+        <h2 class="heading-secondary">Surfboards</h2>
+      </div>
+
+      <ul class="shop-list">
+        <li class="shop-list__item">
+          <img src="./img/board1.png" alt="board-1" />
+          <div class="shop-list__item__text">
+            <div class="shop-list__item--type">Funboards</div>
+            <div class="shop-list__item--heading">
+              Chilli Rare Bird
+            </div>
+            <div class="shop-list__item--price">&#36;890</div>
+            <a href="#" class="text-tertiary margin-sm">Buy</a>
+          </div>
+        </li>
+
+        <li class="shop-list__item">
+          <img src="./img/board2.png" alt="board-2" />
+          <div class=" shop-list__item__text">
+            <div class="shop-list__item--type">Surfboards</div>
+            <div class="shop-list__item--heading">Emery NEM XF</div>
+            <div class="shop-list__item--price">&#36;950</div>
+            <a href="#" class="text-tertiary margin-sm">
+              Buy
+            </a>
+          </div>
+        </li>
+
+        <li class="shop-list__item">
+          <img src="./img/board3.png" alt="board-3" />
+          <div class=" shop-list__item__text">
+            <div class="shop-list__item--type">Funboards</div>
+            <div class="shop-list__item--heading">Agency GROM</div>
+            <div class="shop-list__item--price">&#36;670</div>
+            <a href="#" class="text-tertiary margin-sm">Buy</a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="shop-show_btn">
+        <a class="btn-cta text-tertiary" href="#">show all</a>
+      </div>
+    </section>
+    <!-- articles -->
+    <section class="section articles">
+      <article class="article-first">
+        <div class="article-first__content">
+          <h2 class="heading-secondary">Surf Training</h2>
+          <h3 class="text-secondary">
+            By better understanding the various aspects of surfing,
+            By better understanding the various aspects of surfing,
+            you will improve faster and have more fun in the water.
+          </h3>
+          <div class="margin-md">
+            <a class="btn-cta text-tertiary" href="#">read more</a>
+          </div>
+        </div>
+
+        <img src="./img/article1.jpg" alt="article-1" class="article-first__img" />
+      </article>
+
+      <article class="article-second">
+        <img src="./img/article2.jpg" alt="article-2" class="article-second__img" />
+        <div class="article-second__content">
+          <h2 class="heading-secondary">Point Break</h2>
+          <h3 class="text-secondary">
+            By better understanding the various aspects of surfing,
+            you will improve faster and have more fun in the water.
+          </h3>
+          <div class="margin-md">
+            <a class="btn-cta text-tertiary" href="#">read more</a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- subscribe -->
+    <section class="section subscribe">
+      <h2 class="heading-secondary">Join the Club</h2>
+      <h3 class="text-secondary margin-sm">
+        By better understanding the various aspects of surfing, you
+        will improve faster and have more fun in the water.
+      </h3>
+      <form id="subscribe-form" class="subscribe-form" action="#">
+        <input name="email" type="email" class="text-tertiary" placeholder="Your E-mail" size="20" />
+        <button form="subscribe-form" type="submit" aria-label="send-email"></button>
+      </form>
+    </section>
+    <!-- contacts -->
+    <section class="section contacts">
+      <img class="contacts-img" src="./img/contacts.jpg" alt="contacts" />
+      <div class="contacts-content">
+        <h4 class="text-tertiary">our camp</h4>
+        <address class="contacts-content__address">
+          CA 91932, USA Imperial Beach 560 Silver Strand Blvd
+        </address>
+        <div>
+          <a class="btn-cta text-tertiary" href="#">get in touch</a>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section footer">
+      <img src="./icons/logo.svg" class="footer-logo" alt="logo" />
+
+      <nav class="footer-menu">
+        <ul class="navigation">
+          <li class="navigation__item"><a href="#">stories</a></li>
+          <li class="navigation__item"><a href="#">events</a></li>
+          <li class="navigation__item"><a href="#">places</a></li>
+          <li class="navigation__item"><a href="#">boards</a></li>
+        </ul>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#">
+              <img class="social__item-logo" src="./icons/logo-tumblr.svg" alt="tumblr" /></a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <img class="social__item-logo" src="./icons/logo-twitter.svg" alt="twitter" /></a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <img class="social__item-logo" src="./icons/logo-vimeo.svg" alt="vimeo" /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+
 </html>
